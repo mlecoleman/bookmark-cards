@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Card</title>
+{% extends "base.html" %}
+
+{% block title %}Add Bookmark{% endblock %}
+
+{%block content %}
+    <h1>Add A New Bookmark</h1>
+    <form method="post">
+        <p>
+            Bookmark Title
+            <input type="text" name="bookmarktitle">
+        </p>
+        <p>
+            Bookmark URL
+            <input type="text" name="bookmarkurl">
+        </p>
+        <button type="submit">Add Bookmark</button>
+    </form>
+{% endblock %}

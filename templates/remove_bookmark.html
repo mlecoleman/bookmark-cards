@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Delete Bookmark{% endblock %}
+
+{%block content %}
+    <h1>Remove A Bookmark</h1>
+    Bookmark Title: {{ bookmark.bookmarktitle }} <br>
+    Bookmark URL: {{ bookmark.bookmarkurl }}
+
+    <h2>Are you sure?</h2>
+    <form method="post">
+        <button type="submit">YES</button>
+        <a href="{{ url_for('welcome')}}">NO</a>
+    </form>
+{% endblock %}

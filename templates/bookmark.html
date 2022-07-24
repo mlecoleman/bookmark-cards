@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Bookmarks{% endblock %}
+
+{%block content %}
+    <h1>Bookmark Cards</h1>
+    Bookmark Title: {{ bookmark.bookmarktitle }} <br>
+    Bookmark URL: {{ bookmark.bookmarkurl }}
+    <p>
+            <a href="{{ url_for('welcome') }}">
+                Home
+            </a>
+        <button>
+        {% if index < max_index %}
+            <a href="{{ url_for('bookmark_view', index=index+1) }}">
+                Next Bookmark
+            </a>
+        {% else %}
+            <a href="{{ url_for('bookmark_view', index=0) }}">
+                Start Over
+            </a>
+        {% endif %}
+        </button>
+    </p>
+    <a href="{{ url_for('remove_bookmark', index=index) }}">Delete Bookmark</a>
+{% endblock %}

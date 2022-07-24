@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{%block content %}
+<h1>Hello and Welcome</h1>
+<p>
+    This is a demo application for
+    <em>Getting started</em> on <a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/">Pluralsight</a>
+</p>
+
+<h2>Bookmarks</h2>
+<ul>
+    {% for bookmark in bookmarks %}
+    <li>
+        <a href="{{ url_for('bookmark_view', index=loop.index0) }}">
+            {{ bookmark.bookmarktitle }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('add_bookmark') }}">Add a new bookmark</a>
+
+{% endblock %}}
