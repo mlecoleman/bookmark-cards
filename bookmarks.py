@@ -41,6 +41,25 @@ def add_bookmark():
         return render_template("add_bookmark.html")
 
 
+# @app.route('/edit_bookmark/<int:index>', methods=["GET", "POST"])
+# def edit_bookmark(index):
+#     try:
+#         if request.method == "POST":
+#             bookmark=db[index]
+#              = {"bookmarktitle": request.form['bookmarktitle'],
+#                         "bookmarkurl": request.form['bookmarkurl'],
+#                         "category": request.form['category'],
+#                         "subcategory": request.form['subcategory'],
+#                         "bookmarkdesc": request.form['bookmarkdesc']}
+#             db.append
+#             save_db()
+#             return render_template("bookmark_view.html", bookmark=db[index])
+#         else:
+#             return render_template("edit_bookmark.html", bookmark=db[index])
+#     except IndexError:
+#         abort(404)
+
+
 @app.route('/remove_bookmark/<int:index>', methods=["GET", "POST"])
 def remove_bookmark(index):
     try:

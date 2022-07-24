@@ -20,11 +20,23 @@
         </p>
         <p>
             Category
-            <input type="text" name="category">
+            <select type="text" name="category">
+                <option>Please Select</option>
+                <option>Sustainability</option>
+                <option>Coding</option>
+                <option>Resources</option>
+            </select>
         </p>
         <p>
             Sub-Category
-            <input type="text" name="subcategory">
+            <select type="text" name="subcategory">
+                <option>Please Select</option>
+                <option>Biking</option>
+                <option>Zero Waste</option>
+                <option>Gardening</option>
+                <option>HTML</option>
+                <option>Books</option>
+            </select>
         </p>
         <p>
             Bookmark Description
@@ -32,4 +44,5 @@
         </p>
         <button type="submit">Add Bookmark</button>
     </form>
+    <a href="{{ url_for('welcome')}}">Home</a>
 {% endblock %}

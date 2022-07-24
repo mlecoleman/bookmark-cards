@@ -4,8 +4,10 @@
 
 {%block content %}
     <h1>Remove A Bookmark</h1>
-    Bookmark Title: {{ bookmark.bookmarktitle }} <br>
-    Bookmark URL: {{ bookmark.bookmarkurl }}
+    Bookmark Title: <a href="{{ bookmark.bookmarkurl }}">{{ bookmark.bookmarktitle }}</a> <br>
+    Category: {{ bookmark.category }} <br>
+    Sub Category: {{ bookmark.subcategory }} <br>
+    Description: {{ bookmark.bookmarkdesc }}
 
     <h2>Are you sure?</h2>
     <form method="post">

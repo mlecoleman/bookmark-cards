@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Bookmark{% endblock %}
+
+{%block content %}
+    <h1>Add A New Bookmark</h1>
+    <form method="post">
+        <p>
+            Bookmark Title
+            <input type="text" name="bookmarktitle" placeholder="{{ bookmark.bookmarktitle }}">
+        </p>
+        <p>
+            Bookmark URL
+            <input type="url" name="bookmarkurl" placeholder="{{ bookmark.bookmarkurl }}">
+        </p>
+        <p>
+            Category
+            <input type="text" name="category" placeholder="{{ bookmark.category }}">
+        </p>
+        <p>
+            Sub-Category
+            <input type="text" name="subcategory" placeholder="{{ bookmark.subcategory }}">
+        </p>
+        <p>
+            Bookmark Description
+            <input type="text" name="bookmarkdesc" placeholder="{{ bookmark.bookmarkdesc }}">
+        </p>
+        <button type="submit">Update Bookmark</button>
+    </form>
+{% endblock %}
