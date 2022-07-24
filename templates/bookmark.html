@@ -4,8 +4,10 @@
 
 {%block content %}
     <h1>Bookmark Cards</h1>
-    Bookmark Title: {{ bookmark.bookmarktitle }} <br>
-    Bookmark URL: {{ bookmark.bookmarkurl }}
+    Bookmark Title: <a href="{{ bookmark.bookmarkurl }}">{{ bookmark.bookmarktitle }}</a> <br>
+    Category: {{ bookmark.category }} <br>
+    Sub Category: {{ bookmark.subcategory }} <br>
+    Description: {{ bookmark.bookmarkdesc }}
     <p>
             <a href="{{ url_for('welcome') }}">
                 Home

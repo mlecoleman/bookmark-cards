@@ -30,7 +30,10 @@ def bookmark_view(index):
 def add_bookmark():
     if request.method == "POST":
         bookmark = {"bookmarktitle": request.form['bookmarktitle'],
-                    "bookmarkurl": request.form['bookmarkurl']}
+                    "bookmarkurl": request.form['bookmarkurl'],
+                    "category": request.form['category'],
+                    "subcategory": request.form['subcategory'],
+                    "bookmarkdesc": request.form['bookmarkdesc']}
         db.append(bookmark)
         save_db()
         return redirect(url_for('bookmark_view', index=len(db)-1))
