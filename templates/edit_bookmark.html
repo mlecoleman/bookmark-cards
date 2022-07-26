@@ -7,23 +7,23 @@
     <form method="post">
         <p>
             Bookmark Title
-            <input type="text" name="bookmarktitle" placeholder="{{ bookmark.bookmarktitle }}">
+            <input type="text" name="bookmarktitle" value="{{ bookmark.bookmarktitle }}">
         </p>
         <p>
             Bookmark URL
-            <input type="url" name="bookmarkurl" placeholder="{{ bookmark.bookmarkurl }}">
+            <input type="url" name="bookmarkurl" value="{{ bookmark.bookmarkurl }}">
         </p>
         <p>
             Category
-            <input type="text" name="category" placeholder="{{ bookmark.category }}">
+            <input type="text" name="category" value="{{ bookmark.category }}">
         </p>
         <p>
             Sub-Category
-            <input type="text" name="subcategory" placeholder="{{ bookmark.subcategory }}">
+            <input type="text" name="subcategory" value="{{ bookmark.subcategory }}">
         </p>
         <p>
             Bookmark Description
-            <input type="text" name="bookmarkdesc" placeholder="{{ bookmark.bookmarkdesc }}">
+            <input type="text" name="bookmarkdesc" value="{{ bookmark.bookmarkdesc }}">
         </p>
         <button type="submit">Update Bookmark</button>
     </form>
