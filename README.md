@@ -5,12 +5,16 @@ Hello Code Louisville!
 My project can be easily run at https://colab.research.google.com/drive/1IkynTQEpIm2RTdu53KHjE2swzqMLz1YH#scrollTo=dCYARtVlfwON
 This link should also be included in the Code Louisville google form I used to submit my project.
 
-The code for it is also present in this repo inside of the bookmarks folder.  Pleas disregard all other items as extra-credit... more context below.
+The code for it is also present in this repo inside of the bookmarks folder.  Please disregard all other items as extra-credit... more context below.
 
-I am a bookmarks and resources lover, but the way browsers allow you to store bookmarks doesn't work super well for me.  
+I am a bookmarks and resources lover, but the way browsers allow you to store bookmarks doesn't work super well for me.
+
 I wanted to create a Flask website where I could add bookmarks into a database that held not just the bookmark title and URL, but also a paragraph description, image, and also categorized the bookmarks.
+
 I then wanted the Flask site to display this information in cards that could be either searched or at least organized in a way that made it easy to find what I was looking for.
+
 I made a stab at it first with this repo (https://github.com/mlecoleman/bookmarks) and then with this current repo.
+
 Flask proved to be too big of a hurdle for me to tackle before the deadline, so instead I'm submitting a bare-bones version that will hopefully get me across the finish line, but again I've included my unfinished flask files just to show my work. 
 
 
