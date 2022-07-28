@@ -1,4 +1,7 @@
 import pandas as pd
+# Command for Jupyter notebook
+# !pip install matplotlib
+import matplotlib.pyplot as plt
 
 # Name columns since columns in CSV aren't named
 col_names = ['category',
